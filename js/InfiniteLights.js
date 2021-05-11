@@ -269,6 +269,7 @@ function lerp(current, target, speed = 0.1, limit = 0.001) {
 }
 class CarLights {
   constructor(webgl, options, colors, speed, fade) {
+    console.log({speed})
     this.webgl = webgl;
     this.options = options;
     this.colors = colors;

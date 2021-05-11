@@ -1,125 +1,164 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Infinite Lights | Demo 1 | Codrops</title>
-		<meta name="description" content="A Three.js powered animation that resembles the nightly view of fast cars on a road." />
-		<meta name="keywords" content="webgl, three.js, cars, road, highway, lights, speed, web development, demo, javascript" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-		</script>
-	</head>
-	<body class="demo-1">
-		<main>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">Infinite Lights</h1>
-					<div class="frame__links">
-						<a href="https://tympanus.net/Development/webGLImageTransitions/">Previous demo</a>
-						<a href="https://tympanus.net/codrops/?p=44516">Article</a>
-						<a href="https://github.com/Anemolo/InfiniteLights">GitHub</a>
-					</div>
-				</div>
-				<div class="frame__info">Hint: Press to speed up</div>
-				<div class="frame__demos">
-					<a href="index.html" class="frame__demo frame__demo--current">interstate 1</a>
-					<a href="index2.html" class="frame__demo">interstate 2</a>
-					<a href="index3.html" class="frame__demo">interstate 3</a>
-					<a href="index4.html" class="frame__demo">interstate 4</a>
-					<a href="index5.html" class="frame__demo">interstate 5</a>
-					<a href="index6.html" class="frame__demo">interstate 6</a>
-					<a href="index7.html" class="frame__demo">interstate 7</a>
-				</div>
-			</div>
-			<div class="content">
-				<div id="app"></div>
-				<div class="content__title-wrap">
-					<span class="content__pretitle">Indigo Road Systems</span>
-					<h2 class="content__title">Traffic Ohio</h2>
-					<a class="content__link" href="#">Live updates</a>
-				</div>
-			</div>
-		</main>
-		<script src="js/three.min.js"></script>
-		<script src="js/postprocessing.min.js"></script>
-		<script src="js/InfiniteLights.js"></script>
-		<script src="js/Distortions.js"></script>
-		<script>
-		(function() {
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infinite Lights | Demo 1 | Codrops</title>
+    <meta name="description"
+          content="A Three.js powered animation that resembles the nightly view of fast cars on a road."/>
+    <meta name="keywords"
+          content="webgl, three.js, cars, road, highway, lights, speed, web development, demo, javascript"/>
+    <meta name="author" content="Codrops"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+<body class="demo-2">
+<main>
+    <div class="content intro">
+        <div id="app"></div>
+        <div class="content__title-wrap">
+            <span class="content__pretitle">coming soon...</span>
+            <h2 class="content__title">Pixelcrasher</h2>
+            <a class="content__link" href="#learn-more">Learn more</a>
+        </div>
+    </div>
+    <div class="divider" id="learn-more"></div>
+    <div class="content" style="margin-top: 15vh;">
+        <div class="row">
+            <div class="column full">
+                <div style="background: #fff">
+                    <h2>Pixelcrasher - an Artnet led pixel controller</h2>
+                    <img style="float:right; max-width: 400px;" src="img/controller-scribble.jpeg" alt="controller scribble"/>
+                    <p>Pixelcrasher is a software/hardware to control addressable led stripes in an intuitive and creative way.<br/>
+                       It will be open source and based on affordable hardware components.</p>
+                    <p>The project is in an early stage. This page will be updated when there is more to show 😛</p>
+                    <p>In the meantime you can
+                        <a href="https://twitter.com/hputzek">follow me on twitter</a>
+                       if you want to follow the progress of the project.
+                    </p>
+                    <p>When I do the first beta release I'll also set the github repo to public.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div style="width: auto; max-width: 100%;">
+                    <iframe height="420"
+                            src="https://www.youtube-nocookie.com/embed/hk64mTR_kyE"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <div>
+                    <a href="https://photos.app.goo.gl/XZBoUKKEMMjhtvbv7" target="_blank">
+                        <p>Click here for some project related media</p>
+                        <img src="img/album-preview.jpg" alt="google photos album"/>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <h2>Enjoyable</h2>
+                    <p>A focus on live performance abilities makes running light shows a very pleasant experience for
+                       the operator </p>
+                </div>
+                <div>
+                    <h2>Keep it small</h2>
+                    <p>Instead of trying to aim for any project size, Pixelcrasher is tailored for small venues or
+                       stages (with small budgets) </p>
+                </div>
+                <div>
+                    <h2>Stripes first</h2>
+                    <p>While Pixelcrasher allows you to create led matrices, its strength lies in animating many single
+                       led stripes of varying lengths</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <small>2021 | H. Putzek</small>
+        </footer>
+    </div>
+</main>
+<script src="js/three.min.js"></script>
+<script src="js/postprocessing.min.js"></script>
+<script src="js/InfiniteLights.js"></script>
+<script src="js/Distortions.js"></script>
+<script>
+    (function () {
 
-			const container = document.getElementById('app');
+        const container = document.getElementById('app');
 
-			const options = {
-				onSpeedUp: (ev) => {					
-				},
-				onSlowDown: (ev) => {
-				},
-				// mountainDistortion || LongRaceDistortion || xyDistortion || turbulentDistortion || turbulentDistortionStill || deepDistortionStill || deepDistortion
-				distortion: mountainDistortion, 
-				
-				length: 400,
-				roadWidth: 9,
-				islandWidth: 2,
-				lanesPerRoad: 3,
+        const options = {
+            onSpeedUp: (ev) => {
+            },
+            onSlowDown: (ev) => {
+            },
+            // mountainDistortion || LongRaceDistortion || xyDistortion || turbulentDistortion || turbulentDistortionStill || deepDistortionStill || deepDistortion
+            distortion: LongRaceDistortion,
+            length: 400,
+            roadWidth: 10,
+            islandWidth: 5,
+            lanesPerRoad: 2,
 
-				fov: 90,
-				fovSpeedUp: 150,
-				speedUp: 2,
-				carLightsFade: 0.4,
+            fov: 90,
+            fovSpeedUp: 150,
+            speedUp: 2,
+            carLightsFade: 0.4,
 
-				totalSideLightSticks: 50,
-				lightPairsPerRoadWay: 50,
+            totalSideLightSticks: 0,
+            lightPairsPerRoadWay: 70,
 
-				// Percentage of the lane's width
-				shoulderLinesWidthPercentage: 0.05,
-				brokenLinesWidthPercentage: 0.1,
-				brokenLinesLengthPercentage: 0.5,
+            // Percentage of the lane's width
+            shoulderLinesWidthPercentage: 0.05,
+            brokenLinesWidthPercentage: 0.1,
+            brokenLinesLengthPercentage: 0.5,
 
-				/*** These ones have to be arrays of [min,max].  ***/
-				lightStickWidth: [0.12, 0.5],
-				lightStickHeight: [1.3, 1.7],
+            /*** These ones have to be arrays of [min,max].  ***/
+            lightStickWidth: [0.12, 0.5],
+            lightStickHeight: [1.3, 1.7],
 
-				movingAwaySpeed: [60, 80],
-				movingCloserSpeed: [-120, -160],
+            movingAwaySpeed: [16, 18],
+            movingCloserSpeed: [-6, -8],
 
-				/****  Anything below can be either a number or an array of [min,max] ****/
+            /****  Anything below can be either a number or an array of [min,max] ****/
 
-				// Length of the lights. Best to be less than total length
-				carLightsLength: [400 * 0.05, 400 * 0.15],
-				// Radius of the tubes
-				carLightsRadius: [0.05, 0.14],
-				// Width is percentage of a lane. Numbers from 0 to 1
-				carWidthPercentage: [0.3, 0.5],
-				// How drunk the driver is.
-				// carWidthPercentage's max + carShiftX's max -> Cannot go over 1. 
-				// Or cars start going into other lanes 
-				carShiftX: [-0.2, 0.2],
-				// Self Explanatory
-				carFloorSeparation: [0.05, 1],
+            // Length of the lights. Best to be less than total length
+            carLightsLength: [400 * 0.05, 400 * 0.15],
+            // Radius of the tubes
+            carLightsRadius: [0.05, 0.14],
+            // Width is percentage of a lane. Numbers from 0 to 1
+            carWidthPercentage: [0.3, 0.5],
+            // How drunk the driver is.
+            // carWidthPercentage's max + carShiftX's max -> Cannot go over 1.
+            // Or cars start going into other lanes
+            carShiftX: [-0.2, 0.2],
+            // Self Explanatory
+            carFloorSeparation: [0.05, 1],
 
-				colors: {
-					roadColor: 0x080808,
-					islandColor: 0x0a0a0a,
-					background: 0x000000,
-					shoulderLines: 0x131318,
-					brokenLines: 0x131318,
-					/***  Only these colors can be an array ***/
-					leftCars: [0xff102a, 0xEB383E, 0xff102a],
-					rightCars: [0xdadafa, 0xBEBAE3, 0x8F97E4],
-					sticks: 0xdadafa,
-				}
-			};
+            colors: {
+                roadColor: 0x080808,
+                islandColor: 0x0a0a0a,
+                background: 0x000000,
+                shoulderLines: 0x131318,
+                brokenLines: 0x131318,
+                /***  Only these colors can be an array ***/
+                leftCars: [0x8a5fff, 0xff7a32, 0x231242],
+                rightCars: [0xdb6222, 0xff5700, 0x5322ad],
+                sticks: 0xA4E3E6,
+            }
+        };
 
-			const myApp = new App(container, options);
-			myApp.loadAssets().then(myApp.init)
-		})()
-		</script>
-	</body>
+        const myApp = new App(container, options);
+        myApp.loadAssets().then(myApp.init)
+    })()
+</script>
+</body>
 </html>
