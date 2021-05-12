@@ -95,6 +95,7 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
+	min-height: 90vh;
 	position: relative;
 	justify-content: flex-start;
 	align-items: center;
@@ -156,49 +157,9 @@ canvas {
 	.message {
 		display: none;
 	}
-	.frame {
-		position: fixed;
-		text-align: left;
-		z-index: 100;
-		top: 0;
-		left: 0;
-		display: grid;
-		align-content: space-between;
-		width: 100%;
-		max-width: none;
-		height: 100vh;
-		padding: 2.5rem 4.5rem;
-		pointer-events: none;
-		grid-template-columns: 75% 25%;
-		grid-template-rows: auto auto auto;
-		grid-template-areas: 'title info'
-							'... ...'
-							'... demos';
-	}
-	.frame__title-wrap {
-		grid-area: title;
-		display: flex;
-	}
-	.frame__title {
-		margin: 0 8vw 0 0;
-	}
-	.frame__demos {
-		margin: 0;
-		grid-area: demos;
-		justify-self: end;
-	}
-	.frame__links a {
-		display: inline-block;
-	}
-	.frame__info {
-		justify-self: end;
-	}
-	.frame a {
-		pointer-events: auto;
-	}
 	.content {
-		min-height: 100vh;
 		justify-content: center;
+		min-height: 100vh;
 	}
 }
 
