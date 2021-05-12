@@ -31,7 +31,7 @@ body {
 
 p {
 	margin-top: 0;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 /* Page Loader */
@@ -95,7 +95,6 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 100vh;
 	position: relative;
 	justify-content: flex-start;
 	align-items: center;
@@ -204,19 +203,22 @@ canvas {
 }
 
 .row {
+	background: #fff;
 	max-width: 1200px;
+	box-shadow: rgba(17, 17, 26, 0.5) 0px 4px 16px, rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.5) 0px 16px 56px;
 }
 
 .column {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 5vh;
 }
 .column > div {
 	padding: 20px;
-	margin: 10px;
+	margin: 0;
 	max-width: 380px;
 	flex-grow: 1;
-	background: rgba(255,255,255,0.9);
+	background: #eee;
 }
 
 .column.full > div {
@@ -242,12 +244,8 @@ img {
 }
 
 footer {
+	text-align: center;
 	color: #fff;
+	margin-top: 5vh;
 	padding: 20px;
-}
-
-test {
-	color: #8a5fff;
-background-color: #ff7a32;
-border-color: #231242
 }
